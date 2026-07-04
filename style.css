@@ -14,6 +14,7 @@ body {
     background: #1f1f1f;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .logo {
@@ -36,16 +37,32 @@ nav a:hover {
 /* КОНТЕНТ */
 .content {
     text-align: center;
-    margin-top: 120px;
 }
 
+/* ОБЩИЙ ЗАГОЛОВОК */
 h1 {
     color: #00bfff;
 }
+
+/* HERO */
 .hero {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
+    max-width: 100%;
+    min-height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 120px 20px;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)),
+        url("city-bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero h1 {
@@ -74,6 +91,8 @@ h1 {
     background: #009acd;
     transform: scale(1.05);
 }
+
+/* КАРТОЧКИ */
 .features {
     display: flex;
     justify-content: center;
