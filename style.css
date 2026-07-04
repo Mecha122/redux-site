@@ -1,9 +1,42 @@
 body {
-    background: #1a1a1a;
-    color: white;
+    margin: 0;
     font-family: Arial, sans-serif;
+    background: #121212;
+    color: white;
+}
+
+/* МЕНЮ */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #1f1f1f;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-weight: bold;
+    color: #00bfff;
+    font-size: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00bfff;
+}
+
+/* КОНТЕНТ */
+.content {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 h1 {
