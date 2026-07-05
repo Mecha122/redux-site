@@ -1,111 +1,97 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Redux Site</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="navbar">
-    <div class="logo">Redux Site</div>
+    <!-- ===== МЕНЮ ===== -->
 
-    <nav>
-        <a href="#home">Главная</a>
-        <a href="#gallery">Скриншоты</a>
-        <a href="#features">Плюсы</a>
-        <a href="#download">Скачать</a>
-        <a href="#contacts">Контакты</a>
-    </nav>
-</header>
+    <header class="navbar">
+        <div class="logo">Redux</div>
 
-<section class="hero" id="home">
-    <h1>Redux для Majestic RP</h1>
-    <p>Собери свой уникальный Redux из лучших элементов.</p>
+        <nav>
+            <a href="#home">Главная</a>
+            <a href="#features">Возможности</a>
+            <a href="#about">О проекте</a>
+        </nav>
+    </header>
 
-    <a href="#download" class="btn">Скачать Redux</a>
-</section>
+    <!-- ===== HERO ===== -->
 
-<section class="stats">
-    <div class="stat">
-        <h2>10K+</h2>
-        <p>Пользователей</p>
-    </div>
+    <section id="home" class="hero reveal">
 
-    <div class="stat">
-        <h2>50K+</h2>
-        <p>Скачиваний</p>
-    </div>
+        <h1>Redux</h1>
 
-    <div class="stat">
-        <h2>4.9★</h2>
-        <p>Средняя оценка</p>
-    </div>
-</section>
+        <p>
+            Собери свой идеальный Redux для Majestic RP.
+            Лучшие интерфейсы, мини-карта, HUD и многое другое
+            в одном месте.
+        </p>
 
-<section class="gallery" id="gallery">
+        <a href="#features" class="btn">
+            Смотреть возможности
+        </a>
 
-    <h2>Скриншоты Redux</h2>
+    </section>
 
-    <div class="gallery-grid">
+    <!-- ===== FEATURES ===== -->
 
-        <div class="screenshot">Скриншот 1</div>
+    <section id="features" class="features">
 
-        <div class="screenshot">Скриншот 2</div>
+        <h2 class="reveal">Возможности Redux</h2>
 
-        <div class="screenshot">Скриншот 3</div>
+        <div class="cards">
 
-    </div>
+            <div class="card reveal">
+                <h3>🗺️ Мини-карта</h3>
+                <p>
+                    Современная мини-карта с красивым дизайном и высокой
+                    производительностью.
+                </p>
+            </div>
 
-</section>
+            <div class="card reveal">
+                <h3>🎨 HUD</h3>
+                <p>
+                    Красивый и удобный интерфейс игрока в современном стиле.
+                </p>
+            </div>
 
-<section class="features" id="features">
+            <div class="card reveal">
+                <h3>⚡ Оптимизация</h3>
+                <p>
+                    Максимальная производительность без потери качества.
+                </p>
+            </div>
 
-    <h2>Почему именно наш Redux?</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>Мини-карта</h3>
-            <p>Удобная и красивая мини-карта для комфортной игры.</p>
         </div>
 
-        <div class="card">
-            <h3>Скины оружия</h3>
-            <p>Стильные скины, которые делают игру визуально приятнее.</p>
-        </div>
+    </section>
 
-        <div class="card">
-            <h3>Прицел</h3>
-            <p>Чёткий прицел для удобной стрельбы и красивого интерфейса.</p>
-        </div>
+    <!-- ===== ABOUT ===== -->
 
-    </div>
+    <section id="about" class="about reveal">
 
-</section>
+        <h2>О проекте</h2>
 
-<section class="download" id="download">
+        <p>
+            Redux — это проект, который позволит собрать собственную сборку
+            интерфейсов для Majestic RP. Здесь будут собраны лучшие элементы,
+            современный дизайн и удобная настройка.
+        </p>
 
-    <h2>Скачать Redux</h2>
+    </section>
 
-    <p>Скоро здесь появится ссылка на скачивание.</p>
-
-    <a href="#" class="btn">Скачать</a>
-
-</section>
-
-<section class="contacts" id="contacts">
-
-    <h2>Контакты</h2>
-
-    <p>Discord: твой Discord</p>
-
-</section>
-
-<footer>
-    <p>© 2026 Redux Site. Все права защищены.</p>
-</footer>
+    <script src="script.js"></script>
 
 </body>
+
 </html>

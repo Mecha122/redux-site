@@ -10,8 +10,6 @@ body {
     color: white;
 }
 
-/* ===== МЕНЮ ===== */
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -41,25 +39,22 @@ nav a:hover {
     color: #00bfff;
 }
 
-/* ===== HERO ===== */
-
 .hero {
     min-height: 100vh;
     padding: 120px 20px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     text-align: center;
+
     background:
         radial-gradient(circle at top, rgba(0, 191, 255, 0.25), transparent 40%),
         linear-gradient(135deg, #121212, #050505);
 }
 
 .hero h1 {
-    font-size: 55px;
+    font-size: 60px;
     margin-bottom: 15px;
     color: #00bfff;
     text-shadow: 0 0 25px rgba(0, 191, 255, 0.7);
@@ -67,11 +62,10 @@ nav a:hover {
 
 .hero p {
     font-size: 22px;
-    max-width: 650px;
+    max-width: 700px;
     color: #dddddd;
+    line-height: 1.6;
 }
-
-/* ===== КНОПКА ===== */
 
 .btn {
     display: inline-block;
@@ -93,58 +87,81 @@ nav a:hover {
     box-shadow: 0 0 35px rgba(0, 191, 255, 0.8);
 }
 
-/* ===== СЕКЦИИ ===== */
-
-.features,
-.download,
-.contacts {
-    padding: 90px 20px;
+.features {
+    padding: 100px 10%;
     text-align: center;
+    background: #111111;
 }
 
-.features h2,
-.download h2,
-.contacts h2 {
+.features h2 {
     color: #00bfff;
-    font-size: 36px;
-    margin-bottom: 40px;
+    font-size: 38px;
+    margin-bottom: 60px;
 }
 
 .cards {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
 .card {
-    background: #1f1f1f;
-    width: 280px;
-    padding: 25px;
+    width: 300px;
+    padding: 30px;
     border-radius: 18px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 191, 255, 0.2);
+    backdrop-filter: blur(12px);
     box-shadow: 0 0 20px rgba(0, 191, 255, 0.15);
-    transition: 0.3s;
+    transition: 0.35s;
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 0 30px rgba(0, 191, 255, 0.35);
+    transform: translateY(-10px);
+    border-color: #00bfff;
+    box-shadow: 0 0 35px rgba(0, 191, 255, 0.35);
 }
 
 .card h3 {
     color: #00bfff;
+    margin-bottom: 15px;
 }
 
-/* ===== FOOTER ===== */
+.card p {
+    color: #cfcfcf;
+    line-height: 1.6;
+}
 
-footer {
-    padding: 25px;
+.about {
+    padding: 100px 10%;
     text-align: center;
-    background: #0a0a0a;
-    color: #888;
+    background: #0d0d0d;
 }
 
-/* ===== ТЕЛЕФОН ===== */
+.about h2 {
+    color: #00bfff;
+    font-size: 36px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #cccccc;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: 0.8s;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 @media (max-width: 700px) {
     .navbar {
@@ -158,138 +175,14 @@ footer {
     }
 
     .hero h1 {
-        font-size: 38px;
+        font-size: 42px;
     }
 
     .hero p {
         font-size: 18px;
     }
-}
-/* ===== УЛУЧШЕНИЯ СЕКЦИЙ ===== */
 
-.download,
-.contacts {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.download p,
-.contacts p {
-    color: #cccccc;
-    font-size: 18px;
-}
-
-.card {
-    border: 1px solid rgba(0, 191, 255, 0.15);
-}
-
-.card h3::before {
-    content: "✦ ";
-    color: #00bfff;
-}
-
-/* ===== ПЛАВНОЕ ПОЯВЛЕНИЕ ===== */
-
-.hero h1,
-.hero p,
-.btn,
-.card,
-.features h2,
-.download,
-.contacts {
-    animation: fadeUp 0.8s ease forwards;
-}
-
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(25px);
+    .card {
+        width: 100%;
     }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-/* ===== СТАТИСТИКА ===== */
-
-.stats {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-    padding: 70px 20px;
-    background: #0d0d0d;
-}
-
-.stat {
-    width: 220px;
-    padding: 25px;
-    border-radius: 18px;
-    text-align: center;
-    background: rgba(31,31,31,.9);
-    border: 1px solid rgba(0,191,255,.2);
-    box-shadow: 0 0 20px rgba(0,191,255,.15);
-    transition: .3s;
-}
-
-.stat:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 0 35px rgba(0,191,255,.35);
-}
-
-.stat h2 {
-    margin: 0;
-    color: #00bfff;
-    font-size: 38px;
-}
-
-.stat p {
-    margin-top: 10px;
-    color: #cccccc;
-}
-/* ===== ГАЛЕРЕЯ ===== */
-
-.gallery {
-    padding: 90px 20px;
-    text-align: center;
-    background: #111111;
-}
-
-.gallery h2 {
-    color: #00bfff;
-    font-size: 36px;
-    margin-bottom: 40px;
-}
-
-.gallery-grid {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
-.screenshot {
-    width: 320px;
-    height: 180px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background: linear-gradient(135deg, #1f1f1f, #0a0a0a);
-    border: 1px solid rgba(0, 191, 255, 0.25);
-    border-radius: 18px;
-
-    color: #00bfff;
-    font-size: 20px;
-    font-weight: bold;
-
-    transition: 0.3s;
-    box-shadow: 0 0 20px rgba(0, 191, 255, 0.15);
-}
-
-.screenshot:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 35px rgba(0, 191, 255, 0.4);
 }
