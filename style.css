@@ -248,3 +248,48 @@ footer {
     margin-top: 10px;
     color: #cccccc;
 }
+/* ===== ГАЛЕРЕЯ ===== */
+
+.gallery {
+    padding: 90px 20px;
+    text-align: center;
+    background: #111111;
+}
+
+.gallery h2 {
+    color: #00bfff;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.screenshot {
+    width: 320px;
+    height: 180px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #1f1f1f, #0a0a0a);
+    border: 1px solid rgba(0, 191, 255, 0.25);
+    border-radius: 18px;
+
+    color: #00bfff;
+    font-size: 20px;
+    font-weight: bold;
+
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.15);
+}
+
+.screenshot:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px rgba(0, 191, 255, 0.4);
+}
