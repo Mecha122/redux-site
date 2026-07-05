@@ -211,3 +211,40 @@ footer {
         transform: translateY(0);
     }
 }
+/* ===== СТАТИСТИКА ===== */
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 70px 20px;
+    background: #0d0d0d;
+}
+
+.stat {
+    width: 220px;
+    padding: 25px;
+    border-radius: 18px;
+    text-align: center;
+    background: rgba(31,31,31,.9);
+    border: 1px solid rgba(0,191,255,.2);
+    box-shadow: 0 0 20px rgba(0,191,255,.15);
+    transition: .3s;
+}
+
+.stat:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 35px rgba(0,191,255,.35);
+}
+
+.stat h2 {
+    margin: 0;
+    color: #00bfff;
+    font-size: 38px;
+}
+
+.stat p {
+    margin-top: 10px;
+    color: #cccccc;
+}
