@@ -1,97 +1,69 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Redux Site</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- ===== МЕНЮ ===== -->
+<header class="navbar">
+    <div class="logo">Redux</div>
 
-    <header class="navbar">
-        <div class="logo">Redux</div>
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#features">Возможности</a>
+        <a href="#about">О проекте</a>
+    </nav>
+</header>
 
-        <nav>
-            <a href="#home">Главная</a>
-            <a href="#features">Возможности</a>
-            <a href="#about">О проекте</a>
-        </nav>
-    </header>
+<section class="hero" id="home">
+    <h1>Redux для Majestic RP</h1>
+    <p>
+        Собери свой идеальный Redux: мини-карта, HUD, прицел,
+        скины на оружие и другие улучшения в одном месте.
+    </p>
+    <a href="#features" class="btn">Смотреть возможности</a>
+</section>
 
-    <!-- ===== HERO ===== -->
+<section class="features" id="features">
+    <h2>Возможности</h2>
 
-    <section id="home" class="hero reveal">
-
-        <h1>Redux</h1>
-
-        <p>
-            Собери свой идеальный Redux для Majestic RP.
-            Лучшие интерфейсы, мини-карта, HUD и многое другое
-            в одном месте.
-        </p>
-
-        <a href="#features" class="btn">
-            Смотреть возможности
-        </a>
-
-    </section>
-
-    <!-- ===== FEATURES ===== -->
-
-    <section id="features" class="features">
-
-        <h2 class="reveal">Возможности Redux</h2>
-
-        <div class="cards">
-
-            <div class="card reveal">
-                <h3>🗺️ Мини-карта</h3>
-                <p>
-                    Современная мини-карта с красивым дизайном и высокой
-                    производительностью.
-                </p>
-            </div>
-
-            <div class="card reveal">
-                <h3>🎨 HUD</h3>
-                <p>
-                    Красивый и удобный интерфейс игрока в современном стиле.
-                </p>
-            </div>
-
-            <div class="card reveal">
-                <h3>⚡ Оптимизация</h3>
-                <p>
-                    Максимальная производительность без потери качества.
-                </p>
-            </div>
-
+    <div class="cards">
+        <div class="card">
+            <h3>Мини-карта</h3>
+            <p>Выбирай удобную и красивую мини-карту для игры.</p>
         </div>
 
-    </section>
+        <div class="card">
+            <h3>HUD</h3>
+            <p>Настраивай интерфейс под свой стиль игры.</p>
+        </div>
 
-    <!-- ===== ABOUT ===== -->
+        <div class="card">
+            <h3>Прицел</h3>
+            <p>Подбери удобный прицел для комфортной стрельбы.</p>
+        </div>
 
-    <section id="about" class="about reveal">
+        <div class="card">
+            <h3>Скины оружия</h3>
+            <p>Добавляй красивые визуальные скины для оружия.</p>
+        </div>
+    </div>
+</section>
 
-        <h2>О проекте</h2>
+<section class="about" id="about">
+    <h2>О проекте</h2>
+    <p>
+        Этот сайт создан для удобного выбора Redux элементов для Majestic RP.
+        В будущем здесь появятся категории, превью, скачивание и сборка своего Redux.
+    </p>
+</section>
 
-        <p>
-            Redux — это проект, который позволит собрать собственную сборку
-            интерфейсов для Majestic RP. Здесь будут собраны лучшие элементы,
-            современный дизайн и удобная настройка.
-        </p>
-
-    </section>
-
-    <script src="script.js"></script>
+<footer>
+    <p>© 2026 Redux Site</p>
+</footer>
 
 </body>
-
 </html>
